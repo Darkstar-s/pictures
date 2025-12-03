@@ -26,7 +26,19 @@ yarn global add picgo
 
 ## 2.配置picgo
 
-### 2.1修改配置文件
+### 2.1新建Github仓库
+
+必须设置为公开仓库
+
+![image-20251203193823700](https://cdn.jsdelivr.net/gh/Darkstar-s/pictures/Markdown/202512/03193824_560-image-20251203193823700.png)
+
+### 2.2申请Github访问token
+
+如下图所示新建token
+
+![image-20251203190719837](https://cdn.jsdelivr.net/gh/Darkstar-s/pictures/Markdown/202512/03192626_0fc-03190720_72d-image-20251203190719837.png)
+
+### 2.3修改配置文件
 
 配置文件config.json在"‪C:\\用户名\\ZC\\.picgo"目录下，模板如下
 
@@ -55,19 +67,7 @@ yarn global add picgo
 }
 ```
 
-### 2.2新建Github仓库
-
-必须设置为公开仓库
-
-![image-20251203193823700](https://cdn.jsdelivr.net/gh/Darkstar-s/pictures/Markdown/202512/03193824_560-image-20251203193823700.png)
-
-### 2.3申请Github访问token
-
-如下图所示新建token
-
-![image-20251203190719837](https://cdn.jsdelivr.net/gh/Darkstar-s/pictures/Markdown/202512/03192626_0fc-03190720_72d-image-20251203190719837.png)
-
-## 3.Typora使用picgo
+### 2.4picgo安装插件（可选）
 
 > [!TIP]
 >
@@ -76,6 +76,20 @@ yarn global add picgo
 > ```
 > C:\用户名\ZC\AppData\Local\Yarn\bin
 > ```
+
+安装github增强插件`github-plus`
+
+```
+picgo install github-plus
+```
+
+安装重命名插件`rename-file` ，可以帮我们按照一定的规则将文件进行重命名
+
+```
+picgo install rename-file
+```
+
+## 3.Typora使用picgo
 
 在设置中找到图像，“插入图片时“操作改成**上传图片**，上传服务设定中上传服务下选择**自定义命令**，命令为
 
